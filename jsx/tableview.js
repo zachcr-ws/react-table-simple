@@ -9,9 +9,9 @@ var TBODY = require('./tbody');
  * A simple sortable table component.
  **/
 var S = String.fromCharCode(2);
-Array.prototype.in_array = function(e) {
+var in_array = function(data, e) {
     var r = new RegExp(S + e + S);
-    return (r.test(S + this.join(S) + S));
+    return (r.test(S + data.join(S) + S));
 };
 
 var TableView = React.createClass({
@@ -20,7 +20,7 @@ var TableView = React.createClass({
             fields = new Array();
         for (var i in data) {
             for (j in data[i]) {
-                if (!fields.in_array(j)) {
+                if (!in_array(fields, j)) {
                     fields.push(j)
                 }
             }
