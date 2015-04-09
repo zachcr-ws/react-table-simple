@@ -42,7 +42,7 @@ var TableView = React.createClass({
     },
     render: function() {
         return (
-            <div className="react-table-view"> 
+            <div className="react-table-view">
                 <table className="pure-table">
                     <THEAD data={this.state.fields}/>
                     <TBODY data={this.state.data}/>
