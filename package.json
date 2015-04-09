@@ -1,15 +1,15 @@
 {
-  "name": "react-table",
-  "version": "0.0.1",
-  "description": "a sortable table-view component",
-  "main": "js/table-view.js",
+  "name": "react-table-simple",
+  "version": "0.0.0",
+  "description": "A simple react table",
+  "main": "js/tableview.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/StevenIseki/react-table-view.git"
+    "url": "https://github.com/ZachBergh/react-table"
   },
-  "author": "Steven Iseki",
+  "author": "ZachBergh",
   "license": "MIT",
-  "homepage": "https://github.com/StevenIseki/react-table-view.git",
+  "homepage": "https://github.com/ZachBergh/react-table.git",
   "peerDependencies": {
     "react": "*"
   },
