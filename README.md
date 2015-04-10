@@ -18,7 +18,6 @@ var DATA = [
   { id: 1, make: 'Toyota', model: 'Supra', year: '1996'},
   { id: 2, make: 'Nissan', model: '300ZX', year: '1998'}
 ]
-var OPTIONS = { prefix: 'seconds elapsed!', delay: 100}
 
 React.render(
     React.createElement(
