@@ -40,6 +40,10 @@ var TableView = React.createClass({
     componentWillUnmount: function() {
 
     },
+    componentWillReceiveProps: function(newProps){
+        console.log(newProps);
+        this.setState({data: newProps});
+    },
     render: function() {
         return (
             <div className="react-table-view">
