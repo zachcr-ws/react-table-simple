@@ -7,14 +7,6 @@ var TD = React.createClass({
         return null;
     },
 
-    componentDidMount: function(){
-
-    },
-
-    componentWillMount: function(){
-
-    },
-
     render: function(){
         return (
             <td>{this.props.data}</td>

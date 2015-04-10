@@ -37,12 +37,10 @@ var TableView = React.createClass({
     componentDidMount: function() {
         this.parseFields();
     },
-    componentWillUnmount: function() {
-
+    componentWillReceiveProps: function(newProps){
+        this.setState({data: newProps.data});
+        this.parseFields();
     },
-    // componentWillReceiveProps: function(newProps){
-    //     this.setState({data: newProps});
-    // },
     render: function() {
         return (
             <div className="react-table-view">

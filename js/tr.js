@@ -7,14 +7,6 @@ var TR = React.createClass({displayName: "TR",
         return null;
     },
 
-    componentDidMount: function(){
-
-    },
-
-    componentWillMount: function(){
-
-    },
-
     render: function(){
         return (
             React.createElement("tr", null, 

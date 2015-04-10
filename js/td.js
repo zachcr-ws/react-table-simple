@@ -7,14 +7,6 @@ var TD = React.createClass({displayName: "TD",
         return null;
     },
 
-    componentDidMount: function(){
-
-    },
-
-    componentWillMount: function(){
-
-    },
-
     render: function(){
         return (
             React.createElement("td", null, this.props.data)

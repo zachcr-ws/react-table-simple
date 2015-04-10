@@ -4,8 +4,8 @@ var React = require("react");
 var TR = require("./tr")
 
 var Tbody = React.createClass({
-    parseData : function(){
-        var data = this.props.data,
+    parseData : function(props){
+        var data = props ? props.data : this.props.data,
             result = [];
         for(var i in data){
             var temp = [];
@@ -24,9 +24,11 @@ var Tbody = React.createClass({
     componentDidMount: function(){
         this.parseData();
     },
-    componentWillMount: function(){
+    componentWillReceiveProps: function(newProps){
+        if(this.state.data != [] && this.props != newProps){
+            this.parseData(newProps);
+        }
     },
-
     render: function(){
         return (
             <tbody>

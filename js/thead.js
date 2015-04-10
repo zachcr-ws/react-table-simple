@@ -7,12 +7,6 @@ var Thead = React.createClass({displayName: "Thead",
         return null;
     },
 
-    componentDidMount: function(){},
-
-    componentWillMount: function(){
-
-    },
-
     render: function(){
         return (
             React.createElement("thead", null, 
